@@ -1,0 +1,14 @@
+.topbar-out{
+    background-color: #3b3b51;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+    margin-left: 250px;
+}
+.sunny{
+    margin-right: 20px;
+}
+.topbar-out .nightmode{
+    display: flex;
+}
