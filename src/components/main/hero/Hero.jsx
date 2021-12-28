@@ -18,7 +18,7 @@ function Hero() {
                             areas both in my school courses and out of school, and hope that I will be able to continue
                             doing so on my chosen course and in the extra-curricular opportunities at university..</p>
                         <div>
-                            <a href="./images/Resume/AshishSingh_1902023_CSE.docx" download><button
+                            <a href="./images/Resume/AshishSingh_192023_CSE.docx" download><button
                                     className="btn btn-secondary">
                                     RESUME</button></a>
                         </div>
