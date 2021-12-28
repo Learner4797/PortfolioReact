@@ -1,0 +1,106 @@
+.back{
+    background: var(--dark);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 89%, 70% 100%, 34% 91%, 0 100%, 0 0);
+}
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img{
+    width: 360px;
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    /* color: var(--primary); */
+    margin-bottom: 0.5rem;
+    background: #00c3ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.hero .right h1{
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    margin-top: -1.8rem;
+}
+.hero .right{
+    margin-top: -7rem;
+}
+@media (max-width:1025px){
+    
+    .hero .left img{
+        width: 380px;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .hero .right h6{
+        font-size: 3.4rem;
+        padding-top: 80px;
+    }
+    .hero .right p{
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+    .back{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+    }
+
+    
+}
+@media(max-width:576px){
+    .hero{
+        padding: 1.6rem 0rem;
+        flex-direction: column;
+    }
+    .hero .left img{
+        width: 350px;
+    }
+    .hero .right{
+        margin-top: -25rem;
+    }
+    .hero .right p{
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        font-weight: 800;
+        background: #fffc00;  
+        background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  
+        background: linear-gradient(to right, #ffffff, #fffc00); 
+        background-size: 100%;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+    .hero .right h6{
+        font-size: 3rem;
+        padding-top: 160px;
+    }
+    .hero .right h1{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .back{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 76% 96%, 0 100%);
+    }
+}

@@ -11,7 +11,7 @@
 @import '../src/utils.css';
 
 ::-webkit-scrollbar {
-  width: 3px;  /* Remove scrollbar space */
+  width: 0px;  /* Remove scrollbar space */
   background: transparent;  /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
@@ -22,6 +22,15 @@
   height: 100vh;
   width: 100vw;
 }
+:root{
+  --primary:#3DCFD3;
+  --dark:black;
+  --dark2:#323333;
+  --pure:#FFFFFF;
+  --ternary:#898989;
+  --light:#F2F2F2;
+  --secondary:#606060;
+}
 *{
   padding: 0;
   margin: 0;
@@ -30,14 +39,42 @@
   font-family: 'Poppins',sans-serif;
 }
 
+
 .parent {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: px;
-  grid-row-gap: px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   }
   
-  .div1 { grid-area: 1 / 1 / 2 / 7; }
+  .div1 { grid-area: 1 / 2 / 2 / 7; }
   .div2 { grid-area: 1 / 1 / 13 / 2; }
   .div3 { grid-area: 2 / 2 / 13 / 7; }
+
+  .div3{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+  @media (min-width:1025px) {
+    .parent{
+      position: relative;
+    }
+    .div3{
+      position: absolute;
+    }
+  }
+  @media (max-width:1025px){
+      .parent {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .mob-bar {position: fixed;z-index: 9; grid-area: 2 / 1 / 3 / 2; }
+        .div3 { grid-area: 1 / 1 / 4 / 13; }
+  }
